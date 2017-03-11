@@ -14,6 +14,7 @@ sudo pacman -Rscn xterm && \
 sudo pacman -Rscn epiphany && \
 sudo pacman -Rscn tracker && \
 sudo pacman -Rscn yelp && \
+sudo pacman -Rscn cheese && \
 
 # Programas que serão instalados.
 sudo pacman -S libreoffice libreoffice-pt-BR && \ # Pacote de edição de texto.
