@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+	<menu id="apps-accessories-menu" label="Aplicativos">
+		<item label="Thunar">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
+		<item label="Terminator">
+			<action name="Execute">
+				<execute>terminator</execute>
+			</action>
+		</item>
+		<item label="Firefox">
+			<action name="Execute">
+				<execute>firefox</execute>
+			</action>
+		</item>
+		<item label="Thunderbird">
+			<action name="Execute">
+				<command>thunderbird</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="qBittorrent">
+			<action name="Execute">
+				<command>qbittorrent</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Telegram">
+			<action name="Execute">
+				<execute>telegram</execute>
+			</action>
+		</item>
+		<item label="Dropbox">
+			<action name="Execute">
+				<command>dropbox</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+        	</item>
+	        <item label="Vlc">
+			<action name="Execute">
+				<command>vlc</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+	        <item label="Spotify">
+			<action name="Execute">
+				<command>spotify</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item> 
+	        <item label="Keepass">
+			<action name="Execute">
+				<command>keepass</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item> 
+		<item label="Anki">
+			<action name="Execute">
+				<execute>anki</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="system-menu" label="Sistema">
+		<item label="Openbox Configuration Manager">
+			<action name="Execute">
+				<command>obconf</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Obmenu">
+			<action name="Execute">
+				<command>obmenu ~/.config/openbox/menu.xml</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Tint2">
+			<action name="Execute">
+				<execute>tint2conf</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Reconfigure Openbox">
+			<action name="Reconfigure"/>
+		</item>
+	</menu>
+	<menu id="root-menu" label="Openbox 3">
+		<menu id="apps-accessories-menu"/>
+		<menu id="system-menu"/>
+		<separator/>
+	<menu id="system" label="Desligar">
+		<item label="Desligar">
+			<action name="Execute">
+				<execute>shutdown -h now</execute>
+			</action>
+		</item>
+		<item label="Reiniciar">
+			<action name="Execute">
+				<execute>reboot</execute>
+			</action>
+		</item>
+		<item label="Log Out">
+			<action name="Exit">
+				<prompt>yes</prompt>
+			</action>
+		</item>
+	</menu>
+	</menu>
+</openbox_menu>
