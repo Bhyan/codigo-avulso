@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pacman -Srcn libreoffice-fresh \
+pacman -Rscn libreoffice-fresh \
 	     libgda \
 	     terminator \
 	     xterm
